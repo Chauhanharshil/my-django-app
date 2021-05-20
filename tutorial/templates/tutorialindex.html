@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2> How to set up Django</h2>
+<p>
+    <ul>
+        <li>
+            Install python in your machine
+        </li>
+        <li>
+            Install virtualenv and virtualenvwrapper
+
+            virtualenv and virtualenvwrapper provide a dedicated environment for each Django project you create.
+            While not mandatory, this is considered a best practice and will save you time in the future 
+            when you are ready to deploy your project.<br />
+            Simply type: pip install virtualenvwrapper-win
+
+        </li>
+        <li>
+            Then create a virtual environment for your project:
+            mkvirtualenv myproject
+        </li>
+        <li>
+            The virtual environment will be activated automatically and you will see (myproject) next to the
+            command prompt to designate that. If you start a new command prompt, you will 
+            need to activate the environment again using:
+            workon myproject
+        </li>
+        <li>
+            Install Django.
+            Django can be installed easily using pip within your virtual environment.
+
+            In the command prompt, ensure your virtual environment is active, and execute the following command:
+            pip install django
+
+        </li>
+
+    </ul>
+</p>
+{% endblock %}

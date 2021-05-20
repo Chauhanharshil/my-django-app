@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Django
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Tutorial</a>
+
+    </div>
+    <div class="conatiner">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="footer">
+        created by Harshil Chauhan 2021
+    </div>
+</body>
+</html>
